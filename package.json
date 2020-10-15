@@ -1,0 +1,24 @@
+{
+  "name": "p1.itechart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoophHD/p1.itechart.git"
+  },
+  "author": "Danila Sizykh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoophHD/p1.itechart/issues"
+  },
+  "homepage": "https://github.com/MoophHD/p1.itechart#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0"
+  }
+}
