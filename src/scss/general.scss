@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fjalla One", sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: auto;
+}
