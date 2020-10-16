@@ -10,6 +10,12 @@
         />
 
         <link rel="stylesheet" href="./main.css" />
+
+        <script
+            src="https://kit.fontawesome.com/ce8f9caece.js"
+            async
+            crossorigin="anonymous"
+        ></script>
         <script src="./main.js" defer></script>
     </head>
     <body>
@@ -41,18 +47,49 @@
                     <img
                         src="./img/sliderImg1.png"
                         alt="slider item image"
-                        class="slider__item__img"
+                        class="slider__item__pic"
                     />
-                    <div class="slider__arrow slider__arrow__left"></div>
-                    <div class="slider__arrow slider__arrow__right"></div>
 
-                    <i class="slider__item__icon"></i>
+                    <div class="slider__item__wrapper">
+                        <div class="slider__item__arrows">
+                            <button
+                                class="slider__item__arrow slider__item__arrow--left"
+                            >
+                                <svg
+                                    class="arrow arrow--left"
+                                    viewBox="0 0 400 730"
+                                >
+                                    <path
+                                        d="M0,0V730H400V0H0ZM296.3,495l-22.6,22.65a24,24,0,0,1-33.9,0L103.8,382a23.84,23.84,0,0,1-.31-33.71l.21-.21h0l136-135.67a24,24,0,0,1,33.9,0L296.2,235a23.8,23.8,0,0,1,.16,33.66l-.16.16L199.9,365l96.4,96.17a23.79,23.79,0,0,1,.19,33.64Z"
+                                    />
+                                </svg>
+                            </button>
+                            <div
+                                class="slider__item__arrow slider__item__arrow--right"
+                            >
+                                <svg
+                                    class="arrow arrow--right"
+                                    viewBox="0 0 400 730"
+                                >
+                                    <path
+                                        d="M0,0V730H400V0H0ZM296.3,495l-22.6,22.65a24,24,0,0,1-33.9,0L103.8,382a23.84,23.84,0,0,1-.31-33.71l.21-.21h0l136-135.67a24,24,0,0,1,33.9,0L296.2,235a23.8,23.8,0,0,1,.16,33.66l-.16.16L199.9,365l96.4,96.17a23.79,23.79,0,0,1,.19,33.64Z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
 
-                    <h1 class="slider__item__title">Nunc digno lorem dol</h1>
+                        <i class="slider__item__icon far fa-user"></i>
 
-                    <p class="slider__item__text">Vivamus vestibulum nulla</p>
+                        <h1 class="slider__item__title">
+                            Nunc digno lorem dol
+                        </h1>
 
-                    <a class="slider__item__btn">laoreet ipun</a>
+                        <p class="slider__item__text">
+                            Vivamus vestibulum nulla
+                        </p>
+
+                        <a class="slider__item__btn">laoreet ipun</a>
+                    </div>
                 </div>
             </div>
         </section>

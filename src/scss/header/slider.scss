@@ -1,5 +1,115 @@
+$slider-padding: 20px;
+
 .slider {
     margin-top: 60px;
+
+    padding-bottom: none;
+}
+
+.slider__item {
+    position: relative;
     background-color: white;
-    padding: 20px;
+    border-radius: 3px 3px 0 0;
+    padding: $slider-padding;
+    padding-bottom: 0;
+
+    &__pic {
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &__icon {
+        font-size: 90px;
+        color: white;
+        opacity: 0.65;
+    }
+
+    &__title {
+        opacity: 0.65;
+        text-transform: uppercase;
+        font-size: 64px;
+        margin: 0;
+        color: white;
+        letter-spacing: 0;
+        margin-top: 25px;
+        font-weight: normal;
+    }
+
+    &__text {
+        opacity: 0.65;
+        color: white;
+        margin: 0;
+        margin-top: 25px;
+        font-size: 22px;
+    }
+
+    &__btn {
+        opacity: 0.65;
+        text-transform: uppercase;
+        border-radius: 3px;
+        color: white;
+        border: 3px solid white;
+        padding: 10px;
+        margin-top: 25px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
+
+.slider__item__wrapper {
+    position: absolute;
+    width: calc(100% - 2 * #{$slider-padding});
+    height: calc(100% - #{$slider-padding});
+    bottom: 0;
+
+    margin-left: 0;
+    margin-top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+}
+
+.slider__item__arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-left: 0;
+    margin-top: 0;
+    transform: translate(0, -50%);
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__item__arrow {
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--right {
+        border-left: 15px solid white;
+        border-radius: 3px 0 0 3px;
+    }
+
+    &--left {
+        border-radius: 0 3px 3px 0;
+        border-right: 15px solid white;
+    }
+
+    .arrow {
+        height: 50px;
+        path {
+            fill: white;
+        }
+
+        &--right {
+            transform: rotate(180deg);
+        }
+    }
 }
