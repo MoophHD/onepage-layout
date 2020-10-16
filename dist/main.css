@@ -43,7 +43,7 @@ button {
   .header .section-inner {
     display: flex;
     justify-content: space-between;
-    align-content: center; }
+    align-items: center; }
   .header-logo__title {
     background-color: #b297c4;
     text-transform: uppercase;
