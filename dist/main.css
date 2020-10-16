@@ -105,13 +105,17 @@ button {
   .slider__item__btn {
     opacity: 0.65;
     text-transform: uppercase;
-    border-radius: 3px;
+    border-radius: 5px;
     color: white;
-    border: 3px solid white;
+    border: 4px solid white;
     padding: 10px;
     margin-top: 25px;
     font-size: 18px;
+    line-height: 16px;
     cursor: pointer; }
+
+.active {
+  z-index: 1; }
 
 .slider__item__wrapper {
   position: absolute;
@@ -142,15 +146,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .slider__item__arrow--right {
-    border-left: 15px solid white;
-    border-radius: 3px 0 0 3px; }
-  .slider__item__arrow--left {
-    border-radius: 0 3px 3px 0;
-    border-right: 15px solid white; }
   .slider__item__arrow .arrow {
-    height: 50px; }
+    height: 65px; }
     .slider__item__arrow .arrow path {
       fill: white; }
     .slider__item__arrow .arrow--right {
-      transform: rotate(180deg); }
+      transform: rotate(180deg);
+      margin-right: -1px; }

@@ -47,14 +47,19 @@ $slider-padding: 20px;
     &__btn {
         opacity: 0.65;
         text-transform: uppercase;
-        border-radius: 3px;
+        border-radius: 5px;
         color: white;
-        border: 3px solid white;
+        border: 4px solid white;
         padding: 10px;
         margin-top: 25px;
         font-size: 18px;
+        line-height: 16px;
         cursor: pointer;
     }
+}
+
+.active {
+    z-index: 1;
 }
 
 .slider__item__wrapper {
@@ -92,24 +97,16 @@ $slider-padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    &--right {
-        border-left: 15px solid white;
-        border-radius: 3px 0 0 3px;
-    }
-
-    &--left {
-        border-radius: 0 3px 3px 0;
-        border-right: 15px solid white;
-    }
 
     .arrow {
-        height: 50px;
+        height: 65px;
         path {
             fill: white;
         }
 
         &--right {
             transform: rotate(180deg);
+            margin-right: -1px;
         }
     }
 }
