@@ -9,62 +9,60 @@ body {
   padding: 0;
   position: relative; }
 
-.wrapper {
+.container-fluid {
+  width: 100%; }
+
+.section-outer {
+  width: 100%; }
+
+.section-inner {
   max-width: 1170px;
   margin: auto; }
 
-.header {
-  margin-top: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-content: center; }
-  .header::after {
-    position: absolute;
-    content: "";
-    width: 100vw;
-    left: 0;
-    background-color: #383838;
-    height: 100%;
-    z-index: -2; }
-
-.logo {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  background-color: #b297c4;
+.section-header {
   position: relative;
-  padding: 0 15px; }
-  .logo::after {
-    content: "";
+  padding-top: 70px; }
+  .section-header__bg {
     position: absolute;
-    box-sizing: content-box;
-    padding: 20px 0;
-    height: 100%;
-    width: 100%;
-    background-color: #b297c4;
     z-index: -1;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden; }
+
+.header {
+  background-color: #383838; }
+  .header .section-inner {
+    display: flex;
+    justify-content: space-between;
+    align-content: center; }
+  .header-logo__title {
+    background-color: #b297c4;
+    text-transform: uppercase;
+    font-size: 44px;
+    color: white;
+    padding: 20px;
     border-radius: 5px; }
 
-.logo-title {
-  text-transform: uppercase;
-  font-size: 44px;
-  color: white; }
-
-.nav {
+.header-nav {
   display: flex;
   align-items: stretch; }
+  .header-nav__item {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-right: 2px solid #2a2a2a;
+    padding: 24px; }
+    .header-nav__item:first-child {
+      border-left: 2px solid #2a2a2a; }
+    .header-nav__item:hover {
+      background-color: #2a2a2a;
+      color: #b297c4; }
 
-.nav-item {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  border-right: 2px solid #2a2a2a;
-  padding: 24px; }
-  .nav-item:first-child {
-    border-left: 2px solid #2a2a2a; }
-  .nav-item:hover {
-    background-color: #2a2a2a;
-    color: #b297c4; }
-
+.slider {
+  margin-top: 60px;
+  background-color: white;
+  padding: 20px; }

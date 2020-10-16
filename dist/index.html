@@ -1,29 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitename</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sitename</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="stylesheet" href="./main.css">
-    <script src="./main.js" defer></script>
-</head>
-<body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="logo">
-                <span class="logo-title">sitename</span>
+        <link rel="stylesheet" href="./main.css" />
+        <script src="./main.js" defer></script>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <section class="section-outer section-header">
+            <img
+                class="section-header__bg"
+                src="./img/topBg.png"
+                alt="wooden background"
+            />
+            <header class="header">
+                <div class="section-inner">
+                    <div class="header-logo">
+                        <span class="header-logo__title">sitename</span>
+                    </div>
+
+                    <nav class="header-nav">
+                        <a class="header-nav__item" href="#">home</a>
+                        <a class="header-nav__item" href="#">about</a>
+                        <a class="header-nav__item" href="#">services</a>
+                        <a class="header-nav__item" href="#">folio</a>
+                        <a class="header-nav__item" href="#">contact</a>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="section-inner slider">
+                <div class="slider__item">
+                    <img
+                        src="./img/sliderImg1.png"
+                        alt="slider item image"
+                        class="slider__item__img"
+                    />
+                    <div class="slider__arrow slider__arrow__left"></div>
+                    <div class="slider__arrow slider__arrow__right"></div>
+
+                    <i class="slider__item__icon"></i>
+
+                    <h1 class="slider__item__title">Nunc digno lorem dol</h1>
+
+                    <p class="slider__item__text">Vivamus vestibulum nulla</p>
+
+                    <a class="slider__item__btn">laoreet ipun</a>
+                </div>
             </div>
-    
-            <nav class="nav">
-                <a class="nav-item" href="#">home</a>
-                <a class="nav-item" href="#">about</a>
-                <a class="nav-item" href="#">services</a>
-                <a class="nav-item" href="#">folio</a>
-                <a class="nav-item" href="#">contact</a>
-            </nav>
-        </header>
-    </div>
-</body>
+        </section>
+
+        <!-- MAIN -->
+        <section class="section-outer section-main">
+            <div class="section-inner">
+                <div class="main-featured"></div>
+                <main class="main">
+                    <div class="main-posts"></div>
+
+                    <div class="main-menu"></div>
+                    <div class="main-sidebar"></div>
+                    <div class="main-reviews"></div>
+                </main>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <section class="section-outer section-footer">
+            <div class="section-inner">
+                <div class="footer-top"></div>
+                <div class="footer-bottom"></div>
+            </div>
+        </section>
+    </body>
 </html>
