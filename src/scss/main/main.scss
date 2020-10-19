@@ -2,3 +2,40 @@
     background-color: #f0f0f0;
 }
 
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+
+    grid-template-areas:
+        "post search-bar"
+        "post link-bar"
+        "post review-bar"
+        "post .";
+
+    &__post-container {
+        grid-row-end: span 4;
+        grid-area: post;
+        background-color: tomato;
+        height: 700px;
+    }
+
+    &__searchbar {
+        height: 50px;
+        grid-area: search-bar;
+        background-color: cyan;
+    }
+
+    &__linkbar {
+        height: 50px;
+        grid-area: link-bar;
+        background-color: yellow;
+    }
+
+    &__reviewbar {
+        height: 50px;
+        grid-area: review-bar;
+        background-color: yellowgreen;
+    }
+}
