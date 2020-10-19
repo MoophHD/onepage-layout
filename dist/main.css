@@ -71,19 +71,21 @@ button {
 
 .slider {
   margin-top: 60px;
-  padding-bottom: none;
-  position: relative; }
+  position: relative;
+  height: 460px;
+  overflow: hidden; }
 
 .slider__item {
-  position: relative;
+  background-color: #ccc;
+  width: 100%;
+  position: absolute;
   background-color: white;
   border-radius: 3px 3px 0 0;
   padding: 20px;
   padding-bottom: 0; }
   .slider__item__pic {
     margin: auto;
-    max-width: 100%;
-    max-height: 100%; }
+    max-width: 100%; }
   .slider__item__icon {
     font-size: 90px;
     color: white;
@@ -141,7 +143,7 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  z-index: 1; }
+  z-index: 100; }
 
 .slider__arrow {
   cursor: pointer; }
@@ -152,3 +154,29 @@ button {
     .slider__arrow__icon--right {
       transform: rotate(180deg);
       margin-right: -1px; }
+
+.slideInLeft {
+  animation-name: animateInLeft;
+  z-index: 2; }
+
+.slideInRight {
+  animation-name: animateInRight;
+  z-index: 2; }
+
+.slideOutLeft {
+  transform: translateX(-100%); }
+
+.slideOutRight {
+  transform: translateX(100%); }
+
+@keyframes animateInLeft {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0%); } }
+
+@keyframes animateInRight {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0%); } }

@@ -2,14 +2,15 @@ $slider-padding: 20px;
 
 .slider {
     margin-top: 60px;
-
-    padding-bottom: none;
-
     position: relative;
+    height: 460px;
+    overflow: hidden;
 }
 
 .slider__item {
-    position: relative;
+    background-color: #ccc;
+    width: 100%;
+    position: absolute;
     background-color: white;
     border-radius: 3px 3px 0 0;
     padding: $slider-padding;
@@ -18,7 +19,6 @@ $slider-padding: 20px;
     &__pic {
         margin: auto;
         max-width: 100%;
-        max-height: 100%;
     }
 
     &__icon {
@@ -92,7 +92,7 @@ $slider-padding: 20px;
     display: flex;
     justify-content: space-between;
 
-    z-index: 1;
+    z-index: 100;
 }
 
 .slider__arrow {
@@ -107,5 +107,41 @@ $slider-padding: 20px;
             transform: rotate(180deg);
             margin-right: -1px;
         }
+    }
+}
+
+.slideInLeft {
+    animation-name: animateInLeft;
+    z-index: 2;
+}
+
+.slideInRight {
+    animation-name: animateInRight;
+    z-index: 2;
+}
+
+.slideOutLeft {
+    transform: translateX(-100%);
+}
+
+.slideOutRight {
+    transform: translateX(100%);
+}
+
+@keyframes animateInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes animateInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
     }
 }
