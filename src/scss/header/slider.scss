@@ -4,6 +4,8 @@ $slider-padding: 20px;
     margin-top: 60px;
 
     padding-bottom: none;
+
+    position: relative;
 }
 
 .slider__item {
@@ -77,28 +79,25 @@ $slider-padding: 20px;
     padding-top: 75px;
 }
 
-.slider__item__arrows {
+.slider__arrow-container {
     position: absolute;
     top: 50%;
     left: 0;
     margin-left: 0;
     margin-top: 0;
     transform: translate(0, -50%);
+    padding: 0 $slider-padding;
 
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    z-index: 1;
 }
 
-.slider__item__arrow {
-    -webkit-text-fill-color: transparent;
+.slider__arrow {
     cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .arrow {
+    &__icon {
         height: 65px;
         path {
             fill: white;

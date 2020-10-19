@@ -28,21 +28,40 @@
             />
             <header class="header">
                 <div class="section-inner">
-                    <div class="header-logo">
-                        <span class="header-logo__title">sitename</span>
+                    <div class="logo">
+                        <span class="logo__title">sitename</span>
                     </div>
 
-                    <nav class="header-nav">
-                        <a class="header-nav__item" href="#">home</a>
-                        <a class="header-nav__item" href="#">about</a>
-                        <a class="header-nav__item" href="#">services</a>
-                        <a class="header-nav__item" href="#">folio</a>
-                        <a class="header-nav__item" href="#">contact</a>
+                    <nav class="nav">
+                        <a class="nav__item" href="#">home</a>
+                        <a class="nav__item" href="#">about</a>
+                        <a class="nav__item" href="#">services</a>
+                        <a class="nav__item" href="#">folio</a>
+                        <a class="nav__item" href="#">contact</a>
                     </nav>
                 </div>
             </header>
 
             <div class="section-inner slider">
+                <div class="slider__arrow-container">
+                    <button
+                        class="slider__arrow slider__arrow--left"
+                    >
+                        <svg class="slider__arrow__icon slider__arrow__icon--left" viewBox="0 0 320 470">
+                            <path
+                                d="M0,0V470H249.5A70.49,70.49,0,0,0,320,399.5V70.5A70.49,70.49,0,0,0,249.5,0ZM198.2,286.69l-9,9a9.47,9.47,0,0,1-13.44,0l-53.95-53.95a9.48,9.48,0,0,1,0-13.48l54-53.95a9.47,9.47,0,0,1,13.44,0l9,9a9.48,9.48,0,0,1,0,13.45L160,235l38.24,38.24A9.48,9.48,0,0,1,198.2,286.69Z"
+                            />
+                        </svg>
+                    </button>
+                    <button class="slider__arrow slider__arrow--right">
+                        <svg class="slider__arrow__icon slider__arrow__icon--right" viewBox="0 0 320 470">
+                            <path
+                                d="M0,0V470H249.5A70.49,70.49,0,0,0,320,399.5V70.5A70.49,70.49,0,0,0,249.5,0ZM198.2,286.69l-9,9a9.47,9.47,0,0,1-13.44,0l-53.95-53.95a9.48,9.48,0,0,1,0-13.48l54-53.95a9.47,9.47,0,0,1,13.44,0l9,9a9.48,9.48,0,0,1,0,13.45L160,235l38.24,38.24A9.48,9.48,0,0,1,198.2,286.69Z"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
                 <div class="slider__item">
                     <img
                         src="./img/sliderImg1.png"
@@ -51,33 +70,6 @@
                     />
 
                     <div class="slider__item__wrapper">
-                        <div class="slider__item__arrows">
-                            <button
-                                class="slider__item__arrow slider__item__arrow--left"
-                            >
-                                <svg
-                                    class="arrow arrow--left"
-                                    viewBox="0 0 320 470"
-                                >
-                                    <path
-                                        d="M0,0V470H249.5A70.49,70.49,0,0,0,320,399.5V70.5A70.49,70.49,0,0,0,249.5,0ZM198.2,286.69l-9,9a9.47,9.47,0,0,1-13.44,0l-53.95-53.95a9.48,9.48,0,0,1,0-13.48l54-53.95a9.47,9.47,0,0,1,13.44,0l9,9a9.48,9.48,0,0,1,0,13.45L160,235l38.24,38.24A9.48,9.48,0,0,1,198.2,286.69Z"
-                                    />
-                                </svg>
-                            </button>
-                            <div
-                                class="slider__item__arrow slider__item__arrow--right"
-                            >
-                                <svg
-                                    class="arrow arrow--right"
-                                    viewBox="0 0 320 470"
-                                >
-                                    <path
-                                        d="M0,0V470H249.5A70.49,70.49,0,0,0,320,399.5V70.5A70.49,70.49,0,0,0,249.5,0ZM198.2,286.69l-9,9a9.47,9.47,0,0,1-13.44,0l-53.95-53.95a9.48,9.48,0,0,1,0-13.48l54-53.95a9.47,9.47,0,0,1,13.44,0l9,9a9.48,9.48,0,0,1,0,13.45L160,235l38.24,38.24A9.48,9.48,0,0,1,198.2,286.69Z"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-
                         <i class="slider__item__icon far fa-user"></i>
 
                         <h1 class="slider__item__title">

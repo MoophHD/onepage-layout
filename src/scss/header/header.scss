@@ -11,29 +11,29 @@
         min-height: 100%;
         overflow: hidden;
     }
-}
 
-.header {
-    background-color: #383838;
-    .section-inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &-logo {
-        &__title {
-            background-color: #b297c4;
-            text-transform: uppercase;
-            font-size: 44px;
-            color: white;
-            padding: 20px;
-            border-radius: 5px;
+    .header {
+        background-color: #383838;
+        .section-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }
 
-.header-nav {
+.logo {
+    &__title {
+        background-color: #b297c4;
+        text-transform: uppercase;
+        font-size: 44px;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+    }
+}
+
+.nav {
     display: flex;
     align-items: stretch;
 

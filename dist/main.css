@@ -37,25 +37,25 @@ button {
     max-width: 100%;
     min-height: 100%;
     overflow: hidden; }
+  .section-header .header {
+    background-color: #383838; }
+    .section-header .header .section-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
 
-.header {
-  background-color: #383838; }
-  .header .section-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .header-logo__title {
-    background-color: #b297c4;
-    text-transform: uppercase;
-    font-size: 44px;
-    color: white;
-    padding: 20px;
-    border-radius: 5px; }
+.logo__title {
+  background-color: #b297c4;
+  text-transform: uppercase;
+  font-size: 44px;
+  color: white;
+  padding: 20px;
+  border-radius: 5px; }
 
-.header-nav {
+.nav {
   display: flex;
   align-items: stretch; }
-  .header-nav__item {
+  .nav__item {
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -63,15 +63,16 @@ button {
     text-transform: uppercase;
     border-right: 2px solid #2a2a2a;
     padding: 24px; }
-    .header-nav__item:first-child {
+    .nav__item:first-child {
       border-left: 2px solid #2a2a2a; }
-    .header-nav__item:hover {
+    .nav__item:hover {
       background-color: #2a2a2a;
       color: #b297c4; }
 
 .slider {
   margin-top: 60px;
-  padding-bottom: none; }
+  padding-bottom: none;
+  position: relative; }
 
 .slider__item {
   position: relative;
@@ -129,27 +130,25 @@ button {
   align-items: center;
   padding-top: 75px; }
 
-.slider__item__arrows {
+.slider__arrow-container {
   position: absolute;
   top: 50%;
   left: 0;
   margin-left: 0;
   margin-top: 0;
   transform: translate(0, -50%);
+  padding: 0 20px;
   width: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 1; }
 
-.slider__item__arrow {
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .slider__item__arrow .arrow {
+.slider__arrow {
+  cursor: pointer; }
+  .slider__arrow__icon {
     height: 65px; }
-    .slider__item__arrow .arrow path {
+    .slider__arrow__icon path {
       fill: white; }
-    .slider__item__arrow .arrow--right {
+    .slider__arrow__icon--right {
       transform: rotate(180deg);
       margin-right: -1px; }
