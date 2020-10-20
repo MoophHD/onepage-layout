@@ -39,7 +39,7 @@ gulp.task("fonts", () => {
 
 gulp.task(
     "default",
-    gulp.series(["sass", "js", "html", "img", "fonts"], function (cb) {
+    gulp.series(["sass", "js", "html", "fonts"], function (cb) {
         gulp.watch("src/scss/**/*.scss", gulp.series("sass"));
         gulp.watch("src/js/**/*.js", gulp.series("js"));
         gulp.watch("src/index.html", gulp.series("html"));
