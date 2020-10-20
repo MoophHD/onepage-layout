@@ -7,19 +7,13 @@
     grid-template-columns: 3fr 1fr;
     column-gap: 30px;
     row-gap: 30px;
+    padding-top: 30px;
 
     grid-template-areas:
         "post search-bar"
         "post link-bar"
         "post review-bar"
         "post .";
-
-    &__post-container {
-        grid-row-end: span 4;
-        grid-area: post;
-        background-color: tomato;
-        height: 700px;
-    }
 
     &__searchbar {
         height: 50px;

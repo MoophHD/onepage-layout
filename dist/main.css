@@ -3,6 +3,10 @@
 *::before {
   box-sizing: border-box; }
 
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("./fonts/MYRIADPRO-REGULAR.OTF") format("opentype"); }
+
 body {
   font-family: "Fjalla One", sans-serif;
   margin: 0;
@@ -15,9 +19,6 @@ button {
   outline: none;
   padding: 0;
   margin: 0; }
-
-.container-fluid {
-  width: 100%; }
 
 .section-outer {
   width: 100%; }
@@ -233,12 +234,8 @@ button {
   grid-template-columns: 3fr 1fr;
   column-gap: 30px;
   row-gap: 30px;
+  padding-top: 30px;
   grid-template-areas: "post search-bar" "post link-bar" "post review-bar" "post ."; }
-  .content__post-container {
-    grid-row-end: span 4;
-    grid-area: post;
-    background-color: tomato;
-    height: 700px; }
   .content__searchbar {
     height: 50px;
     grid-area: search-bar;
@@ -251,3 +248,55 @@ button {
     height: 50px;
     grid-area: review-bar;
     background-color: yellowgreen; }
+
+.post-container {
+  columns: 3;
+  column-gap: 30px;
+  grid-row-end: span 4;
+  grid-area: post; }
+
+.post {
+  line-height: 1.5rem;
+  color: #747474;
+  display: inline-block;
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15); }
+  .post .post-inner {
+    padding: 30px 20px 0 20px; }
+  .post__title {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .post__img {
+    margin-bottom: 15px; }
+  .post__text {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 25px;
+    color: #747474; }
+  .post__readmore {
+    padding: 15px 30px;
+    color: white;
+    display: block;
+    background-color: #b297c4;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px; }
+    .post__readmore:hover > .post__readmore__title {
+      margin-right: 15px; }
+    .post__readmore__title {
+      text-transform: uppercase;
+      margin-right: 10px;
+      transition: margin 0.5s ease; }
+  .post__img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between; }
+  .post__img-2x2 {
+    margin: 10px 0;
+    flex-basis: calc(50% - 10px);
+    /* width minus margins */ }

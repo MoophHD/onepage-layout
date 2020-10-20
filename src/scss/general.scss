@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('./fonts/MYRIADPRO-REGULAR.OTF') format('opentype');
+}
+
 body {
     font-family: "Fjalla One", sans-serif;
     margin: 0;
@@ -19,10 +24,6 @@ button {
     margin: 0;
 }
 
-.container-fluid {
-    width: 100%;
-}
-
 .section-outer {
     width: 100%;
 }
@@ -30,14 +31,4 @@ button {
 .section-inner {
     max-width: 1170px;
     margin: auto;
-}
-
-%grid {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(12, 1fr);
-}
-
-%icon-font {
-    font-family: "FontAwesome", Helvetica, Arial, sans-serif;
 }
