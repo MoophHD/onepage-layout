@@ -1,0 +1,142 @@
+$border-radius: 10px;
+
+@mixin main-block {
+    background-color: white;
+    border-radius: $border-radius;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15);
+}
+
+@mixin main-title {
+    color: #747474;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.searchbar {
+    @include main-block();
+
+    padding: 20px;
+
+    &__title {
+        @include main-title();
+        margin-bottom: 20px;
+    }
+
+    &__input-container {
+        position: relative;
+    }
+
+    &__input {
+        font-family: "Oxygen";
+        font-size: 13px;
+        padding: 8px;
+        padding-right: 25px;
+        border: none;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    &__icon {
+        color: #b297c4;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+.linkbar {
+    @include main-block();
+
+    padding: 25px 20px 30px;
+
+    &__title {
+        @include main-title();
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        &__item {
+            font-family: "Oxygen";
+            font-size: 13px;
+            color: #747474;
+            padding: 12px 0;
+
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: #747474;
+            }
+
+            i {
+                margin-right: 10px;
+                color: #b297c4;
+            }
+        }
+    }
+}
+
+.reviewbar {
+    @include main-block();
+
+    padding: 24px 20px 30px;
+
+    &__title {
+        @include main-title();
+    }
+
+    &__review {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ 
+        padding: 18px 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            border: none;
+            padding-bottom: 0;
+        }
+
+        &__title {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #b297c4;
+            margin-bottom: 5px;
+        }
+
+        &__link {
+            font-family: "Oxygen";
+            font-size: 13px;
+            color: #979797;
+        }
+
+        &__icon {
+            background-color: #b297c4;
+            height: 60px;
+            width: 60px;
+            border-radius: 5px;
+            margin-right: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            float: left;
+
+            i {
+                font-size: 25px;
+                color: white;
+            }
+        }
+    }
+}

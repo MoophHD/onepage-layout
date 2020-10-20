@@ -14,22 +14,4 @@
         "post link-bar"
         "post review-bar"
         "post .";
-
-    &__searchbar {
-        height: 50px;
-        grid-area: search-bar;
-        background-color: cyan;
-    }
-
-    &__linkbar {
-        height: 50px;
-        grid-area: link-bar;
-        background-color: yellow;
-    }
-
-    &__reviewbar {
-        height: 50px;
-        grid-area: review-bar;
-        background-color: yellowgreen;
-    }
 }

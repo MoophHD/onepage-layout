@@ -3,6 +3,11 @@
 *::before {
   box-sizing: border-box; }
 
+h2 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+
 @font-face {
   font-family: 'Myriad Pro';
   src: url("./fonts/MYRIADPRO-REGULAR.OTF") format("opentype"); }
@@ -236,18 +241,6 @@ button {
   row-gap: 30px;
   padding-top: 30px;
   grid-template-areas: "post search-bar" "post link-bar" "post review-bar" "post ."; }
-  .content__searchbar {
-    height: 50px;
-    grid-area: search-bar;
-    background-color: cyan; }
-  .content__linkbar {
-    height: 50px;
-    grid-area: link-bar;
-    background-color: yellow; }
-  .content__reviewbar {
-    height: 50px;
-    grid-area: review-bar;
-    background-color: yellowgreen; }
 
 .post-container {
   columns: 3;
@@ -298,5 +291,103 @@ button {
     align-items: space-between; }
   .post__img-2x2 {
     margin: 10px 0;
-    flex-basis: calc(50% - 10px);
-    /* width minus margins */ }
+    flex-basis: calc(50% - 10px); }
+
+.searchbar {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px; }
+  .searchbar__title {
+    color: #747474;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-bottom: 20px; }
+  .searchbar__input-container {
+    position: relative; }
+  .searchbar__input {
+    font-family: "Oxygen";
+    font-size: 13px;
+    padding: 8px;
+    padding-right: 25px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    width: 100%; }
+  .searchbar__icon {
+    color: #b297c4;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translate(0, -50%); }
+
+.linkbar {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15);
+  padding: 25px 20px 30px; }
+  .linkbar__title {
+    color: #747474;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .linkbar__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    .linkbar__list__item {
+      font-family: "Oxygen";
+      font-size: 13px;
+      color: #747474;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      .linkbar__list__item:last-child {
+        border-bottom: none; }
+      .linkbar__list__item a {
+        text-decoration: none;
+        color: #747474; }
+      .linkbar__list__item i {
+        margin-right: 10px;
+        color: #b297c4; }
+
+.reviewbar {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15);
+  padding: 24px 20px 30px; }
+  .reviewbar__title {
+    color: #747474;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 15px; }
+  .reviewbar__review {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 18px 0; }
+    .reviewbar__review:first-child {
+      padding-top: 0; }
+    .reviewbar__review:last-child {
+      border: none;
+      padding-bottom: 0; }
+    .reviewbar__review__title {
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #b297c4;
+      margin-bottom: 5px; }
+    .reviewbar__review__link {
+      font-family: "Oxygen";
+      font-size: 13px;
+      color: #979797; }
+    .reviewbar__review__icon {
+      background-color: #b297c4;
+      height: 60px;
+      width: 60px;
+      border-radius: 5px;
+      margin-right: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left; }
+      .reviewbar__review__icon i {
+        font-size: 25px;
+        color: white; }
