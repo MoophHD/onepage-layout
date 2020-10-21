@@ -25,8 +25,6 @@ function changeItem(right) {
 
     if (right) {
       newActive = allItems[(activeItemIndex + 1) % allItems.length];
-      console.log((activeItemIndex + 1) % allItems.length);
-      console.log(newActive);
       active.classList.add("slideOutLeft");
       newActive.classList.add("slideInRight", "active");
     } else {
@@ -40,9 +38,7 @@ function changeItem(right) {
 
 allItems.forEach((item) => {
   item.addEventListener("transitionend", () => {
-    console.log("transition end");
     if (item == active && !clickable) {
-      console.log("inside");
       clickable = true;
 
       active.classList.remove(
