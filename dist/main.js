@@ -7,13 +7,6 @@ const containerOpenClass = "hamburger__item-container--open";
 
 btn.addEventListener("click", () => {
   container.classList.toggle(containerOpenClass);
-
-  // if (hamburgerItemContainer.style.display == "flex") {
-  //   // hamburgerItemContainer.style.display = "none";
-  //   hamburgerItemContainer.classList.remove(hamburgerItemContainerOpenClass);
-  // } else {
-  //   // hamburgerItemContainer.style.display = "flex";
-  //   hamburgerItemContainer.classList.add(hamburgerItemContainerOpenClass);
 });
 
 const SLIDETIME = 600;
