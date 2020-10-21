@@ -4,6 +4,9 @@ const concat = require("gulp-concat");
 const imagemin = require("gulp-imagemin");
 const cache = require("gulp-cache");
 
+const uglify = require('gulp-uglify-es').default;
+const minifyCSS = require("gulp-minify-css")
+
 const paths = {
   src: {
     js: "src/js/**/*.js",
@@ -25,14 +28,16 @@ gulp.task("sass", () => {
   return gulp
     .src(paths.src.sass)
     .pipe(sass().on("error", sass.logError))
-    .pipe(concat("main.css"))
+    .pipe(minifyCSS())
+    .pipe(concat("main.min.css"))
     .pipe(gulp.dest(paths.dist.sass));
 });
 
 gulp.task("js", () => {
   return gulp
     .src(paths.src.js)
-    .pipe(concat("main.js"))
+    .pipe(uglify())
+    .pipe(concat("main.min.js"))
     .pipe(gulp.dest(paths.dist.js));
 });
 
