@@ -295,6 +295,59 @@ button {
         font-size: 25px;
         color: white; }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 70%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden; }
+  .hamburger__btn-container {
+    z-index: 1;
+    background-color: #383838;
+    padding: 15px 0; }
+  .hamburger__btn {
+    margin: auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #b297c4;
+    background-color: white;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .hamburger__item-container {
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: stretch;
+    transform: translateY(-100%);
+    transition: visibility 0s, transform 0.3s ease;
+    position: absolute; }
+    .hamburger__item-container--open {
+      visibility: visible;
+      position: relative;
+      transform: translateY(0); }
+  .hamburger__item {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 0;
+    border-top: 1px solid white; }
+    .hamburger__item:hover {
+      background-color: #2a2a2a;
+      color: #b297c4; }
+    .hamburger__item:last-child {
+      border-bottom: 1px solid white; }
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; } }
+
 .section-header {
   position: relative;
   padding-top: 70px; }
@@ -337,6 +390,16 @@ button {
     .nav__item:hover {
       background-color: #2a2a2a;
       color: #b297c4; }
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; }
+  .section-inner {
+    flex-direction: column; }
+  .logo {
+    margin-bottom: 20px; }
+    .logo__title {
+      padding: 10px 15px; } }
 
 .slider {
   margin-top: 60px;

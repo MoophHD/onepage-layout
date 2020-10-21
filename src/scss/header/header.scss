@@ -1,3 +1,5 @@
+@import "../utils/variables";
+
 .section-header {
     position: relative;
     padding-top: 70px;
@@ -53,6 +55,23 @@
         &:hover {
             background-color: #2a2a2a;
             color: #b297c4;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .nav {
+        display: none;
+    }
+
+    .section-inner {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+        &__title {
+            padding: 10px 15px;
         }
     }
 }

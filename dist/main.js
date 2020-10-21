@@ -1,3 +1,21 @@
+const btn = document.querySelector(".hamburger__btn");
+const container = document.querySelector(
+  ".hamburger__item-container"
+);
+
+const containerOpenClass = "hamburger__item-container--open";
+
+btn.addEventListener("click", () => {
+  container.classList.toggle(containerOpenClass);
+
+  // if (hamburgerItemContainer.style.display == "flex") {
+  //   // hamburgerItemContainer.style.display = "none";
+  //   hamburgerItemContainer.classList.remove(hamburgerItemContainerOpenClass);
+  // } else {
+  //   // hamburgerItemContainer.style.display = "flex";
+  //   hamburgerItemContainer.classList.add(hamburgerItemContainerOpenClass);
+});
+
 const SLIDETIME = 600;
 
 const leftBtn = document.querySelector(".slider__arrow--left");
