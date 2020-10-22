@@ -57,7 +57,9 @@
                             </button>
                         </div>
 
-                        <div class="nav--dropdown__item-container jsNavDropContainer">
+                        <div
+                            class="nav--dropdown__item-container jsNavDropContainer"
+                        >
                             <a class="nav--dropdown__item" href="#">home</a>
                             <a class="nav--dropdown__item" href="#">about</a>
                             <a class="nav--dropdown__item" href="#">services</a>
@@ -71,299 +73,270 @@
             <!-- SLIDER -->
             <div class="slider">
                 <div class="slider__inner">
+                    <div class="slider__arrow-container">
+                        <button class="slider__arrow jsSlideLeft">
+                            <svg class="arrow__icon" viewBox="0 0 320 470">
+                                <path
+                                    d="M0,0V470H249.5A70.49,70.49,0,0,0,320,399.5V70.5A70.49,70.49,0,0,0,249.5,0ZM198.2,286.69l-9,9a9.47,9.47,0,0,1-13.44,0l-53.95-53.95a9.48,9.48,0,0,1,0-13.48l54-53.95a9.47,9.47,0,0,1,13.44,0l9,9a9.48,9.48,0,0,1,0,13.45L160,235l38.24,38.24A9.48,9.48,0,0,1,198.2,286.69Z"
+                                />
+                            </svg>
+                        </button>
+                        <button class="slider__arrow--right jsSlideRight">
+                            <svg
+                                class="arrow__icon--right"
+                                viewBox="0 0 320 470"
+                            >
+                                <path
+                                    d="M0,0V470H249.5A70.49,70.49,0,0,0,320,399.5V70.5A70.49,70.49,0,0,0,249.5,0ZM198.2,286.69l-9,9a9.47,9.47,0,0,1-13.44,0l-53.95-53.95a9.48,9.48,0,0,1,0-13.48l54-53.95a9.47,9.47,0,0,1,13.44,0l9,9a9.48,9.48,0,0,1,0,13.45L160,235l38.24,38.24A9.48,9.48,0,0,1,198.2,286.69Z"
+                                />
+                            </svg>
+                        </button>
+                    </div>
 
-                <div class="slider__arrow-container">
-                    <button class="slider__arrow jsSlideLeft">
-                        <svg
-                            class="arrow__icon"
-                            viewBox="0 0 320 470"
-                        >
-                            <path
-                                d="M0,0V470H249.5A70.49,70.49,0,0,0,320,399.5V70.5A70.49,70.49,0,0,0,249.5,0ZM198.2,286.69l-9,9a9.47,9.47,0,0,1-13.44,0l-53.95-53.95a9.48,9.48,0,0,1,0-13.48l54-53.95a9.47,9.47,0,0,1,13.44,0l9,9a9.48,9.48,0,0,1,0,13.45L160,235l38.24,38.24A9.48,9.48,0,0,1,198.2,286.69Z"
-                            />
-                        </svg>
-                    </button>
-                    <button class="slider__arrow--right jsSlideRight">
-                        <svg
-                            class="arrow__icon--right"
-                            viewBox="0 0 320 470"
-                        >
-                            <path
-                                d="M0,0V470H249.5A70.49,70.49,0,0,0,320,399.5V70.5A70.49,70.49,0,0,0,249.5,0ZM198.2,286.69l-9,9a9.47,9.47,0,0,1-13.44,0l-53.95-53.95a9.48,9.48,0,0,1,0-13.48l54-53.95a9.47,9.47,0,0,1,13.44,0l9,9a9.48,9.48,0,0,1,0,13.45L160,235l38.24,38.24A9.48,9.48,0,0,1,198.2,286.69Z"
-                            />
-                        </svg>
-                    </button>
-                </div>
+                    <!-- Workaround, sets parents height -->
+                    <div class="slider__slide--dummy">
+                        <img
+                            src="./img/sliderImg1.png"
+                            alt="slider item image"
+                            class="slide__img"
+                        />
+                    </div>
 
-                <!-- Workaround, sets parents height -->
-                <div class="slider__slide--dummy">
-                    <img
-                        src="./img/sliderImg1.png"
-                        alt="slider item image"
-                        class="slide__img"
-                    />
-                </div>
+                    <div class="slider__slide jsSlide active">
+                        <img
+                            src="./img/sliderImg1.png"
+                            alt="slider item image"
+                            class="slide__img"
+                        />
 
-                <div class="slider__slide jsSlide active">
-                    <img
-                        src="./img/sliderImg1.png"
-                        alt="slider item image"
-                        class="slide__img"
-                    />
+                        <div class="slide__wrapper">
+                            <i class="slide__icon far fa-user"></i>
 
-                    <div class="slide__wrapper">
-                        <i class="slide__icon far fa-user"></i>
+                            <h1 class="slide__title">Nunc digno lorem dol</h1>
 
-                        <h1 class="slide__title">
-                            Nunc digno lorem dol
-                        </h1>
+                            <p class="slide__text">Vivamus vestibulum nulla</p>
 
-                        <p class="slide__text">
-                            Vivamus vestibulum nulla
-                        </p>
+                            <a class="slide__btn">laoreet ipun</a>
+                        </div>
+                    </div>
 
-                        <a class="slide__btn">laoreet ipun</a>
+                    <div class="slider__slide jsSlide">
+                        <img
+                            src="./img/sliderImg1.png"
+                            alt="slider item image"
+                            class="slide__img"
+                        />
+
+                        <div class="slide__wrapper">
+                            <i class="slide__icon far fa-user"></i>
+
+                            <h1 class="slide__title">Nunc digno lorem dol 2</h1>
+
+                            <p class="slide__text">Vivamus vestibulum nulla</p>
+
+                            <a class="slide__btn">laoreet ipun</a>
+                        </div>
+                    </div>
+
+                    <div class="slider__slide jsSlide">
+                        <img
+                            src="./img/sliderImg1.png"
+                            alt="slider item image"
+                            class="slide__img"
+                        />
+
+                        <div class="slide__wrapper">
+                            <i class="slide__icon far fa-user"></i>
+
+                            <h1 class="slide__title">Nunc digno lorem dol 3</h1>
+
+                            <p class="slide__text">Vivamus vestibulum nulla</p>
+
+                            <a class="slide__btn">laoreet ipun</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="slider__slide jsSlide">
-                    <img
-                        src="./img/sliderImg1.png"
-                        alt="slider item image"
-                        class="slide__img"
-                    />
-
-                    <div class="slide__wrapper">
-                        <i class="slide__icon far fa-user"></i>
-
-                        <h1 class="slide__title">
-                            Nunc digno lorem dol 2
-                        </h1>
-
-                        <p class="slide__text">
-                            Vivamus vestibulum nulla
-                        </p>
-
-                        <a class="slide__btn">laoreet ipun</a>
-                    </div>
-                </div>
-
-                <div class="slider__slide jsSlide">
-                    <img
-                        src="./img/sliderImg1.png"
-                        alt="slider item image"
-                        class="slide__img"
-                    />
-
-                    <div class="slide__wrapper">
-                        <i class="slide__icon far fa-user"></i>
-
-                        <h1 class="slide__title">
-                            Nunc digno lorem dol 3
-                        </h1>
-
-                        <p class="slide__text">
-                            Vivamus vestibulum nulla
-                        </p>
-
-                        <a class="slide__btn">laoreet ipun</a>
-                    </div>
-                </div>
-            </div>
-            <!-- SLIDER -->
-
+                <!-- SLIDER -->
             </div>
         </header>
         <!-- HEADER -->
 
         <!-- MAIN -->
-        <section class="section-outer section-main">
-            <div class="section-inner">
-                <div class="main-featured"></div>
-                <main class="main">
-                    <!-- INFO-TILES -->
-                    <div class="info-tile-container">
-                        <div class="info-tile">
-                            <i
-                                class="info-tile__icon fa fa-headphones"
-                                aria-hidden="true"
-                            ></i>
-                            <h2 class="info-tile__title">ibus tortor</h2>
-                            <p class="info-tile__text">Morbi interdum mollis</p>
-                        </div>
-                        <div class="info-tile">
-                            <i
-                                class="info-tile__icon fa fa-sync"
-                                aria-hidden="true"
-                            ></i>
-                            <h2 class="info-tile__title">aliquam</h2>
-                            <p class="info-tile__text">Vestibulam dipbus</p>
-                        </div>
-                        <div class="info-tile">
-                            <i
-                                class="info-tile__icon fa fa-clock"
-                                aria-hidden="true"
-                            ></i>
-                            <h2 class="info-tile__title">Nunciden</h2>
-                            <p class="info-tile__text">Idot crasorma elinit</p>
-                        </div>
-                        <div class="info-tile">
-                            <i
-                                class="info-tile__icon fa fa-comments"
-                                aria-hidden="true"
-                            ></i>
-                            <h2 class="info-tile__title">egestasmod</h2>
-                            <p class="info-tile__text">Felis moodo tortor</p>
-                        </div>
+        <main class="main">
+            <div class="main__inner">
+                <!-- INFO-TILES -->
+                <div class="info-tile-container">
+                    <div class="info-tile">
+                        <i
+                            class="info-tile__icon fa fa-headphones"
+                            aria-hidden="true"
+                        ></i>
+                        <h2 class="info-tile__title">ibus tortor</h2>
+                        <p class="info-tile__text">Morbi interdum mollis</p>
                     </div>
-                    <!-- INFO-TILES -->
+                    <div class="info-tile">
+                        <i
+                            class="info-tile__icon fa fa-sync"
+                            aria-hidden="true"
+                        ></i>
+                        <h2 class="info-tile__title">aliquam</h2>
+                        <p class="info-tile__text">Vestibulam dipbus</p>
+                    </div>
+                    <div class="info-tile">
+                        <i
+                            class="info-tile__icon fa fa-clock"
+                            aria-hidden="true"
+                        ></i>
+                        <h2 class="info-tile__title">Nunciden</h2>
+                        <p class="info-tile__text">Idot crasorma elinit</p>
+                    </div>
+                    <div class="info-tile">
+                        <i
+                            class="info-tile__icon fa fa-comments"
+                            aria-hidden="true"
+                        ></i>
+                        <h2 class="info-tile__title">egestasmod</h2>
+                        <p class="info-tile__text">Felis moodo tortor</p>
+                    </div>
+                </div>
+                <!-- INFO-TILES -->
 
-                    <div class="content">
-                        <div class="post-container">
-                            <div class="post">
-                                <div class="post-inner">
-                                    <h2 class="post__title">
-                                        Praesent dapibus lipsum neque id cursus
-                                        faucio dolor ibus tortor neque tiinous
-                                        egetas augue
-                                    </h2>
+                <!-- MAIN-CONTENT -->
+                <div class="main__content">
+                    <div class="content__post-container">
+                        <div class="content__post">
+                            <div class="post__inner">
+                                <h2 class="post__title">
+                                    Praesent dapibus lipsum neque id cursus
+                                    faucio dolor ibus tortor neque tiinous
+                                    egetas augue
+                                </h2>
 
-                                    <img
-                                        class="post__img"
-                                        src="./img/post1.png"
-                                    />
+                                <img class="post__img" src="./img/post1.png" />
 
-                                    <p class="post__text">
-                                        Phasellus ultrices nulla quis nibh.
-                                        Quisque a lectus. Donec consectetuer
-                                        ligula vulputate.
-                                    </p>
-                                </div>
-
-                                <a class="post__readmore" href="#">
-                                    <span class="post__readmore__title"
-                                        >read more</span
-                                    >
-                                    <i
-                                        class="post__readmore__arrow fa fa-arrow-right"
-                                    ></i>
-                                </a>
+                                <p class="post__text">
+                                    Phasellus ultrices nulla quis nibh. Quisque
+                                    a lectus. Donec consectetuer ligula
+                                    vulputate.
+                                </p>
                             </div>
 
-                            <div class="post">
-                                <div class="post-inner">
-                                    <h2 class="post__title">cursus faucio</h2>
+                            <a class="post__readmore" href="#">
+                                <span class="post__readmore__title"
+                                    >read more</span
+                                >
+                                <i
+                                    class="post__readmore__arrow fa fa-arrow-right"
+                                ></i>
+                            </a>
+                        </div>
 
-                                    <img
-                                        class="post__img"
-                                        src="./img/post2.png"
-                                    />
+                        <div class="content__post">
+                            <div class="post__inner">
+                                <h2 class="post__title">cursus faucio</h2>
 
-                                    <p class="post__text">
-                                        Phasellus ultrices nulla
-                                    </p>
-                                </div>
+                                <img class="post__img" src="./img/post2.png" />
 
-                                <a class="post__readmore" href="#">
-                                    <span class="post__readmore__title"
-                                        >read more</span
-                                    >
-                                    <i
-                                        class="post__readmore__arrow fa fa-arrow-right"
-                                    ></i>
-                                </a>
+                                <p class="post__text">
+                                    Phasellus ultrices nulla
+                                </p>
                             </div>
 
-                            <div class="post">
-                                <div class="post-inner">
-                                    <h2 class="post__title">
-                                        Integer vitae libero ac risus egestas
-                                        risus egestas placerat
-                                    </h2>
+                            <a class="post__readmore" href="#">
+                                <span class="post__readmore__title"
+                                    >read more</span
+                                >
+                                <i
+                                    class="post__readmore__arrow fa fa-arrow-right"
+                                ></i>
+                            </a>
+                        </div>
 
-                                    <img
-                                        class="post__img"
-                                        src="./img/post3.png"
-                                    />
+                        <div class="content__post">
+                            <div class="post__inner">
+                                <h2 class="post__title">
+                                    Integer vitae libero ac risus egestas risus
+                                    egestas placerat
+                                </h2>
 
-                                    <p class="post__text">
-                                        Sed adipiscing ornare risus. Morbi est
-                                        est, blandit sit amet, sagittis vel,
-                                        euismod vel ipsum dolor.
-                                    </p>
-                                </div>
+                                <img class="post__img" src="./img/post3.png" />
 
-                                <a class="post__readmore" href="#">
-                                    <span class="post__readmore__title"
-                                        >read more</span
-                                    >
-                                    <i
-                                        class="post__readmore__arrow fa fa-arrow-right"
-                                    ></i>
-                                </a>
+                                <p class="post__text">
+                                    Sed adipiscing ornare risus. Morbi est est,
+                                    blandit sit amet, sagittis vel, euismod vel
+                                    ipsum dolor.
+                                </p>
                             </div>
 
-                            <div class="post">
-                                <div class="post-inner">
-                                    <h2 class="post__title">
-                                        Aliquam tincidunt mauris eu risus mauris
-                                        eu risus
-                                    </h2>
-                                    <p class="post__text">
-                                        Morbi in sem quis dui placerat ornare.
-                                        Pellentesque odio nisi, euismod in,
-                                        pharetra a, ultricies in, diam. Sed
-                                        arcu. Cras consequat onec nec justo eget
-                                        felis facilisis fermentum. Aliquam
-                                        porttitor mauris sit amet orci.
-                                    </p>
-                                </div>
+                            <a class="post__readmore" href="#">
+                                <span class="post__readmore__title"
+                                    >read more</span
+                                >
+                                <i
+                                    class="post__readmore__arrow fa fa-arrow-right"
+                                ></i>
+                            </a>
+                        </div>
 
-                                <a class="post__readmore" href="#">
-                                    <span class="post__readmore__title"
-                                        >read more</span
-                                    >
-                                    <i
-                                        class="post__readmore__arrow fa fa-arrow-right"
-                                    ></i>
-                                </a>
+                        <div class="content__post">
+                            <div class="post__inner">
+                                <h2 class="post__title">
+                                    Aliquam tincidunt mauris eu risus mauris eu
+                                    risus
+                                </h2>
+                                <p class="post__text">
+                                    Morbi in sem quis dui placerat ornare.
+                                    Pellentesque odio nisi, euismod in, pharetra
+                                    a, ultricies in, diam. Sed arcu. Cras
+                                    consequat onec nec justo eget felis
+                                    facilisis fermentum. Aliquam porttitor
+                                    mauris sit amet orci.
+                                </p>
                             </div>
 
-                            <div class="post">
-                                <div class="post-inner">
-                                    <h2 class="post__title">
-                                        Integer vitae libero risus egestas
-                                        placerat risus
-                                    </h2>
+                            <a class="post__readmore" href="#">
+                                <span class="post__readmore__title"
+                                    >read more</span
+                                >
+                                <i
+                                    class="post__readmore__arrow fa fa-arrow-right"
+                                ></i>
+                            </a>
+                        </div>
 
-                                    <img
-                                        class="post__img"
-                                        src="./img/post5.png"
-                                    />
+                        <div class="content__post">
+                            <div class="post__inner">
+                                <h2 class="post__title">
+                                    Integer vitae libero risus egestas placerat
+                                    risus
+                                </h2>
 
-                                    <p class="post__text">
-                                        Sed adipiscing ornare risus. Morbi est
-                                        est, blandit sit amet.
-                                    </p>
-                                </div>
+                                <img class="post__img" src="./img/post5.png" />
 
-                                <a class="post__readmore" href="#">
-                                    <span class="post__readmore__title"
-                                        >read more</span
-                                    >
-                                    <i
-                                        class="post__readmore__arrow fa fa-arrow-right"
-                                    ></i>
-                                </a>
+                                <p class="post__text">
+                                    Sed adipiscing ornare risus. Morbi est est,
+                                    blandit sit amet.
+                                </p>
                             </div>
 
-                            <div class="post">
-                                <div class="post-inner">
-                                    <h2 class="post__title">
-                                        Integer vitae libero ac risus egestas
-                                    </h2>
+                            <a class="post__readmore" href="#">
+                                <span class="post__readmore__title"
+                                    >read more</span
+                                >
+                                <i
+                                    class="post__readmore__arrow fa fa-arrow-right"
+                                ></i>
+                            </a>
+                        </div>
 
-                                    <div class="post__img-container">
+                        <div class="content__post">
+                            <div class="post__inner">
+                                <h2 class="post__title">
+                                    Integer vitae libero ac risus egestas
+                                </h2>
+
+                                <div class="post__img-container">
+                                    <div class="post__img-2x2-row">
                                         <img
                                             src="./img/post6.1.png"
                                             class="post__img-2x2"
@@ -372,6 +345,9 @@
                                             src="./img/post6.2.png"
                                             class="post__img-2x2"
                                         />
+                                    </div>
+
+                                    <div class="post__img-2x2-row">
                                         <img
                                             src="./img/post6.3.png"
                                             class="post__img-2x2"
@@ -381,137 +357,122 @@
                                             class="post__img-2x2"
                                         />
                                     </div>
-
-                                    <p class="post__text">
-                                        Morbi interdum mollis sapien. Sed ac
-                                        risus. Phasellus lacinia, magna a
-                                        ullamcorper laoreet, Pulvinar risus,
-                                        vitae facilis onec nec justo eget felis
-                                        facilisis fermentum. Aliquam porttitor
-                                        mauris sit amet orci. Aenean dignissim
-                                        pellentesque felis
-                                    </p>
                                 </div>
 
-                                <a class="post__readmore" href="#">
-                                    <span class="post__readmore__title"
-                                        >read more</span
-                                    >
-                                    <i
-                                        class="post__readmore__arrow fa fa-arrow-right"
-                                    ></i>
-                                </a>
+                                <p class="post__text">
+                                    Morbi interdum mollis sapien. Sed ac risus.
+                                    Phasellus lacinia, magna a ullamcorper
+                                    laoreet, Pulvinar risus, vitae facilis onec
+                                    nec justo eget felis facilisis fermentum.
+                                    Aliquam porttitor mauris sit amet orci.
+                                    Aenean dignissim pellentesque felis
+                                </p>
                             </div>
 
-                            <div class="post">
-                                <div class="post-inner">
-                                    <h2 class="post__title">
-                                        Lorem ipsum dolor
-                                    </h2>
-
-                                    <img
-                                        class="post__img"
-                                        src="./img/post7.png"
-                                    />
-
-                                    <p class="post__text">
-                                        Pellentesque odio nisi, euismod in,
-                                        pharetra a, ultricies in.
-                                    </p>
-                                </div>
-
-                                <a class="post__readmore" href="#">
-                                    <span class="post__readmore__title"
-                                        >read more</span
-                                    >
-                                    <i
-                                        class="post__readmore__arrow fa fa-arrow-right"
-                                    ></i>
-                                </a>
-                            </div>
+                            <a class="post__readmore" href="#">
+                                <span class="post__readmore__title"
+                                    >read more</span
+                                >
+                                <i
+                                    class="post__readmore__arrow fa fa-arrow-right"
+                                ></i>
+                            </a>
                         </div>
 
-                        <div class="searchbar">
-                            <h2 class="searchbar__title">search</h2>
-                            <div class="searchbar__input-container">
-                                <input class="searchbar__input" type="text" />
-                                <i class="searchbar__icon fa fa-search"></i>
-                            </div>
-                        </div>
+                        <div class="content__post">
+                            <div class="post__inner">
+                                <h2 class="post__title">Lorem ipsum dolor</h2>
 
-                        <div class="linkbar">
-                            <h2 class="linkbar__title">lorem ipsum</h2>
-                            <ul class="linkbar__list">
-                                <li class="linkbar__list__item">
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="#">
-                                        Aliquam tincidunt mauris viv
-                                    </a>
-                                </li>
-                                <li class="linkbar__list__item">
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="#"> Vestibulum auctor dapibus </a>
-                                </li>
-                                <li class="linkbar__list__item">
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="#"> Nunc dignissim risus idot </a>
-                                </li>
-                                <li class="linkbar__list__item">
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="#">
-                                        Cras ornare tristique elinit
-                                    </a>
-                                </li>
-                                <li class="linkbar__list__item">
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="#">
-                                        Vivamus vestibulum nulla nec
-                                    </a>
-                                </li>
-                                <li class="linkbar__list__item">
-                                    <i class="fa fa-angle-right"></i>
-                                    <a href="#">
-                                        Praesent placerat risus quis
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="reviewbar">
-                            <h2 class="reviewbar__title">Maoreet facilis</h2>
-                            <div class="reviewbar__review">
-                                <div class="reviewbar__review__icon">
-                                    <i class="fa fa-bell"></i>
-                                </div>
-                                <h2 class="reviewbar__review__title">
-                                    Vivamus
-                                </h2>
-                                <a href="#" class="reviewbar__review__link"
-                                    >Nulla nec praesent placerat risus..</a
-                                >
+                                <img class="post__img" src="./img/post7.png" />
+
+                                <p class="post__text">
+                                    Pellentesque odio nisi, euismod in, pharetra
+                                    a, ultricies in.
+                                </p>
                             </div>
-                            <div class="reviewbar__review">
-                                <div class="reviewbar__review__icon">
-                                    <i class="fa fa-beer"></i>
-                                </div>
-                                <h2 class="reviewbar__review__title">John</h2>
-                                <a href="#" class="reviewbar__review__link"
-                                    >Nulla nec praesent placerat risus..</a
+
+                            <a class="post__readmore" href="#">
+                                <span class="post__readmore__title"
+                                    >read more</span
                                 >
-                            </div>
-                            <div class="reviewbar__review">
-                                <div class="reviewbar__review__icon">
-                                    <i class="fa fa-quote-right"></i>
-                                </div>
-                                <h2 class="reviewbar__review__title">Amenda</h2>
-                                <a href="#" class="reviewbar__review__link"
-                                    >Nulla nec praesent placerat risus..</a
-                                >
-                            </div>
+                                <i
+                                    class="post__readmore__arrow fa fa-arrow-right"
+                                ></i>
+                            </a>
                         </div>
                     </div>
-                </main>
+
+                    <div class="searchbar">
+                        <h2 class="searchbar__title">search</h2>
+                        <div class="searchbar__input-container">
+                            <input class="searchbar__input" type="text" />
+                            <i class="searchbar__icon fa fa-search"></i>
+                        </div>
+                    </div>
+
+                    <div class="linkbar">
+                        <h2 class="linkbar__title">lorem ipsum</h2>
+                        <ul class="linkbar__list">
+                            <li class="linkbar__list__item">
+                                <i class="fa fa-angle-right"></i>
+                                <a href="#"> Aliquam tincidunt mauris viv </a>
+                            </li>
+                            <li class="linkbar__list__item">
+                                <i class="fa fa-angle-right"></i>
+                                <a href="#"> Vestibulum auctor dapibus </a>
+                            </li>
+                            <li class="linkbar__list__item">
+                                <i class="fa fa-angle-right"></i>
+                                <a href="#"> Nunc dignissim risus idot </a>
+                            </li>
+                            <li class="linkbar__list__item">
+                                <i class="fa fa-angle-right"></i>
+                                <a href="#"> Cras ornare tristique elinit </a>
+                            </li>
+                            <li class="linkbar__list__item">
+                                <i class="fa fa-angle-right"></i>
+                                <a href="#"> Vivamus vestibulum nulla nec </a>
+                            </li>
+                            <li class="linkbar__list__item">
+                                <i class="fa fa-angle-right"></i>
+                                <a href="#"> Praesent placerat risus quis </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reviewbar">
+                        <h2 class="reviewbar__title">Maoreet facilis</h2>
+                        <div class="reviewbar__review">
+                            <div class="reviewbar__review__icon">
+                                <i class="fa fa-bell"></i>
+                            </div>
+                            <h2 class="reviewbar__review__title">Vivamus</h2>
+                            <a href="#" class="reviewbar__review__link"
+                                >Nulla nec praesent placerat risus..</a
+                            >
+                        </div>
+                        <div class="reviewbar__review">
+                            <div class="reviewbar__review__icon">
+                                <i class="fa fa-beer"></i>
+                            </div>
+                            <h2 class="reviewbar__review__title">John</h2>
+                            <a href="#" class="reviewbar__review__link"
+                                >Nulla nec praesent placerat risus..</a
+                            >
+                        </div>
+                        <div class="reviewbar__review">
+                            <div class="reviewbar__review__icon">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <h2 class="reviewbar__review__title">Amenda</h2>
+                            <a href="#" class="reviewbar__review__link"
+                                >Nulla nec praesent placerat risus..</a
+                            >
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </main>
+        <!-- MAIN -->
 
         <!-- FOOTER -->
         <section class="section-outer section-footer">
@@ -573,21 +534,16 @@
                     </div>
 
                     <div class="footer__nav">
-                        <a href="#" class="footer__nav-link">
-                            Home
-                        </a>
+                        <a href="#" class="footer__nav-link"> Home </a>
 
                         <span class="footer__nav-divider">::</span>
 
-                        <a href="#"  class="footer__nav-link">
-                            About
-                        </a>
+                        <a href="#" class="footer__nav-link"> About </a>
 
                         <span class="footer__nav-divider">::</span>
 
-                        <a href="#"  class="footer__nav-link">
-                            Contact
-                        </a>
+                        <a href="#" class="footer__nav-link"> Contact </a>
+                    </div>
                 </div>
             </div>
         </section>

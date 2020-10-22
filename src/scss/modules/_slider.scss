@@ -3,7 +3,6 @@ $slider-padding: 20px;
 .slider {
     @include wrap;
 
-    margin-top: 60px;
     background-color: white;
     padding: $slider-padding;
     padding-bottom: 0;

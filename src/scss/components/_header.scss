@@ -1,5 +1,4 @@
 .header {
-    @include fluid;
     padding-top: 70px;
     position: relative;
     width: 100%;
@@ -15,6 +14,7 @@
 
     &__nav {
         background-color: #383838;
+        margin-bottom: 60px;
     }
 
     &__inner {
