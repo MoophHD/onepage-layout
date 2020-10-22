@@ -1,8 +1,8 @@
 const SLIDETIME = 600;
 
-const leftBtn = document.querySelector(".slider__arrow--left");
-const rightBtn = document.querySelector(".slider__arrow--right");
-const allItems = [...document.querySelectorAll(".slider__item")];
+const leftBtn = document.querySelector(".jsSlideLeft");
+const rightBtn = document.querySelector(".jsSlideRight");
+const allItems = [...document.querySelectorAll(".jsSlide")];
 let clickable = true;
 let active = null;
 let newActive = null;
@@ -17,6 +17,8 @@ function initSlider() {
 }
 
 function changeItem(right) {
+
+  console.log("click");
   if (clickable) {
     clickable = false;
 

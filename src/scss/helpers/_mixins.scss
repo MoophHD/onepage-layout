@@ -1,0 +1,17 @@
+@mixin wrap {
+    max-width: 1170px;
+    margin: 0 85px;
+
+    @media (max-width: $breakpoint-tablet) {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        width: 100%;
+    }
+}
+
+@mixin fluid {
+    width: 100%;
+}

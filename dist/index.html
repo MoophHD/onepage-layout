@@ -18,28 +18,28 @@
             rel="stylesheet"
         />
 
-        <link rel="stylesheet" href="./main.min.css" />
-
         <script
             src="https://kit.fontawesome.com/1512ff074f.js"
             async
             crossorigin="anonymous"
         ></script>
 
+        <link rel="stylesheet" href="./main.min.css" />
+
         <script src="./main.min.js" defer></script>
     </head>
     <body>
         <!-- HEADER -->
-        <section class="section-outer section-header">
+        <header class="header">
             <img
-                class="section-header__bg"
+                class="header__bg"
                 src="./img/topBg.png"
                 alt="wooden background"
             />
-            <header class="header">
-                <div class="section-inner">
-                    <div class="logo">
-                        <span class="logo__title">sitename</span>
+            <nav class="header__nav">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a href="#" class="header__link">sitename</a>
                     </div>
 
                     <nav class="nav">
@@ -50,29 +50,32 @@
                         <a class="nav__item" href="#">contact</a>
                     </nav>
 
-                    <div class="hamburger">
-                        <div class="hamburger__btn-container">
-                            <button class="hamburger__btn">
+                    <div class="nav--dropdown">
+                        <div class="nav--dropdown__btn-container">
+                            <button class="nav--dropdown__btn jsNavDropBtn">
                                 <i class="fas fa-bars"></i>
                             </button>
                         </div>
 
-                        <div class="hamburger__item-container">
-                            <a class="hamburger__item" href="#">home</a>
-                            <a class="hamburger__item" href="#">about</a>
-                            <a class="hamburger__item" href="#">services</a>
-                            <a class="hamburger__item" href="#">folio</a>
-                            <a class="hamburger__item" href="#">contact</a>
+                        <div class="nav--dropdown__item-container jsNavDropContainer">
+                            <a class="nav--dropdown__item" href="#">home</a>
+                            <a class="nav--dropdown__item" href="#">about</a>
+                            <a class="nav--dropdown__item" href="#">services</a>
+                            <a class="nav--dropdown__item" href="#">folio</a>
+                            <a class="nav--dropdown__item" href="#">contact</a>
                         </div>
                     </div>
                 </div>
-            </header>
+            </nav>
 
-            <div class="section-inner slider">
+            <!-- SLIDER -->
+            <div class="slider">
+                <div class="slider__inner">
+
                 <div class="slider__arrow-container">
-                    <button class="slider__arrow slider__arrow--left">
+                    <button class="slider__arrow jsSlideLeft">
                         <svg
-                            class="slider__arrow__icon slider__arrow__icon--left"
+                            class="arrow__icon"
                             viewBox="0 0 320 470"
                         >
                             <path
@@ -80,9 +83,9 @@
                             />
                         </svg>
                     </button>
-                    <button class="slider__arrow slider__arrow--right">
+                    <button class="slider__arrow--right jsSlideRight">
                         <svg
-                            class="slider__arrow__icon slider__arrow__icon--right"
+                            class="arrow__icon--right"
                             viewBox="0 0 320 470"
                         >
                             <path
@@ -92,79 +95,93 @@
                     </button>
                 </div>
 
-                <div class="slider__item active">
+                <!-- Workaround, sets parents height -->
+                <div class="slider__slide--dummy">
                     <img
                         src="./img/sliderImg1.png"
                         alt="slider item image"
-                        class="slider__item__pic"
+                        class="slide__img"
+                    />
+                </div>
+
+                <div class="slider__slide jsSlide active">
+                    <img
+                        src="./img/sliderImg1.png"
+                        alt="slider item image"
+                        class="slide__img"
                     />
 
-                    <div class="slider__item__wrapper">
-                        <i class="slider__item__icon far fa-user"></i>
+                    <div class="slide__wrapper">
+                        <i class="slide__icon far fa-user"></i>
 
-                        <h1 class="slider__item__title">
+                        <h1 class="slide__title">
                             Nunc digno lorem dol
                         </h1>
 
-                        <p class="slider__item__text">
+                        <p class="slide__text">
                             Vivamus vestibulum nulla
                         </p>
 
-                        <a class="slider__item__btn">laoreet ipun</a>
+                        <a class="slide__btn">laoreet ipun</a>
                     </div>
                 </div>
 
-                <div class="slider__item">
+                <div class="slider__slide jsSlide">
                     <img
                         src="./img/sliderImg1.png"
                         alt="slider item image"
-                        class="slider__item__pic"
+                        class="slide__img"
                     />
 
-                    <div class="slider__item__wrapper">
-                        <i class="slider__item__icon far fa-user"></i>
+                    <div class="slide__wrapper">
+                        <i class="slide__icon far fa-user"></i>
 
-                        <h1 class="slider__item__title">
+                        <h1 class="slide__title">
                             Nunc digno lorem dol 2
                         </h1>
 
-                        <p class="slider__item__text">
+                        <p class="slide__text">
                             Vivamus vestibulum nulla
                         </p>
 
-                        <a class="slider__item__btn">laoreet ipun</a>
+                        <a class="slide__btn">laoreet ipun</a>
                     </div>
                 </div>
 
-                <div class="slider__item">
+                <div class="slider__slide jsSlide">
                     <img
                         src="./img/sliderImg1.png"
                         alt="slider item image"
-                        class="slider__item__pic"
+                        class="slide__img"
                     />
 
-                    <div class="slider__item__wrapper">
-                        <i class="slider__item__icon far fa-user"></i>
+                    <div class="slide__wrapper">
+                        <i class="slide__icon far fa-user"></i>
 
-                        <h1 class="slider__item__title">
+                        <h1 class="slide__title">
                             Nunc digno lorem dol 3
                         </h1>
 
-                        <p class="slider__item__text">
+                        <p class="slide__text">
                             Vivamus vestibulum nulla
                         </p>
 
-                        <a class="slider__item__btn">laoreet ipun</a>
+                        <a class="slide__btn">laoreet ipun</a>
                     </div>
                 </div>
             </div>
-        </section>
+            <!-- SLIDER -->
+
+            </div>
+        </header>
+        <!-- HEADER -->
 
         <!-- MAIN -->
         <section class="section-outer section-main">
             <div class="section-inner">
                 <div class="main-featured"></div>
                 <main class="main">
+                    <!-- INFO-TILES -->
                     <div class="info-tile-container">
                         <div class="info-tile">
                             <i
@@ -199,6 +216,7 @@
                             <p class="info-tile__text">Felis moodo tortor</p>
                         </div>
                     </div>
+                    <!-- INFO-TILES -->
 
                     <div class="content">
                         <div class="post-container">

@@ -1,9 +1,7 @@
-const btn = document.querySelector(".hamburger__btn");
-const container = document.querySelector(
-  ".hamburger__item-container"
-);
+const btn = document.querySelector(".jsNavDropBtn");
+const container = document.querySelector(".jsNavDropContainer");
 
-const containerOpenClass = "hamburger__item-container--open";
+const containerOpenClass = "nav--dropdown__item-container--open";
 
 btn.addEventListener("click", () => {
   container.classList.toggle(containerOpenClass);
