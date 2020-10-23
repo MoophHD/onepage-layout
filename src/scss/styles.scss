@@ -1,25 +1,26 @@
-@import 'base/base';
+@import "base/base";
 
 // VARIABLES
 
-@import 'variables/color';
-@import 'variables/breakpoints';
+@import "variables/color";
+@import "variables/breakpoints";
 
 // HELPERS
 
-@import 'helpers/mixins';
-@import 'helpers/functions';
+@import "helpers/mixins";
+@import "helpers/functions";
 
 // MODULES
 
-@import 'modules/nav';
-@import 'modules/slider';
-@import 'modules/info-tile';
-@import 'modules/reviewbar';
-@import 'modules/searchbar';
-@import 'modules/linkbar';
+@import "modules/nav";
+@import "modules/slider";
+@import "modules/info-tile";
+@import "modules/reviewbar";
+@import "modules/searchbar";
+@import "modules/linkbar";
 
 // COMPONENTS
 
-@import 'components/header';
-@import 'components/main';
+@import "components/header";
+@import "components/main";
+@import "components/footer";
