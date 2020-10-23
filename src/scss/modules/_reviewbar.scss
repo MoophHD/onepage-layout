@@ -2,10 +2,6 @@
 .reviewbar {
     grid-area:review-bar;
 
-    // @media (max-width: $breakpoint-mobile) {
-    //     display: flex;
-    // }
-
     @include main-block();
 
     padding: 24px 20px 30px;

@@ -1,13 +1,13 @@
 $border-radius: 10px;
 
 .main {
-
     &-mobile-wrapper {
         @media (max-width: $breakpoint-mobile) {
             columns: 1;
             padding: 0 25px;
         }
     }
+
     background-color: $color-accent-2;
 
     &__inner {
@@ -26,13 +26,17 @@ $border-radius: 10px;
             "post link-bar"
             "post review-bar"
             "post .";
+    }
 
-        @media (max-width: $breakpoint-laptop) {
+    @media (max-width: $breakpoint-laptop) {
+        &__content {
             column-gap: 20px;
             row-gap: 20px;
         }
+    }
 
-        @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-tablet) {
+        &__content {
             grid-template-areas:
                 "search-bar search-bar"
                 "post post"
@@ -50,13 +54,6 @@ $border-radius: 10px;
         grid-row-end: span 4;
         grid-area: post;
         column-width: 100%;
-
-        @media (max-width: $breakpoint-laptop) {
-            column-gap: 20px;
-        }
-        @media (max-width: $breakpoint-mobile) {
-            columns: 1;
-        }
     }
 
     &__post {
@@ -68,16 +65,27 @@ $border-radius: 10px;
         border-radius: $border-radius;
         box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15);
 
-        @media (max-width: $breakpoint-laptop) {
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: $breakpoint-mobile) {
-            width: 100%;
-        }
-
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: $breakpoint-laptop) {
+        &__post-container {
+            column-gap: 20px;
+        }
+
+        &__post {
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: $breakpoint-mobile) {
+        &__post-container {
+            columns: 1;
+        }
+
+        &__post {
+            width: 100%;
         }
     }
 }
@@ -98,10 +106,6 @@ $border-radius: 10px;
     &__img {
         width: 100%;
         margin-bottom: 15px;
-        @media (max-width: $breakpoint-mobile) {
-            max-width: 75%;
-            align-self: center;
-        }
     }
 
     &__text {
@@ -149,5 +153,12 @@ $border-radius: 10px;
     &__img-2x2 {
         width: calc(50% - 8px);
         padding: 2px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        &__img {
+            max-width: 75%;
+            align-self: center;
+        }
     }
 }

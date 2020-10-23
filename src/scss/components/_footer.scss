@@ -31,16 +31,27 @@
     }
 
     &__info {
-        flex: 1;
         margin-right: 10px;
 
         &:last-child {
             margin-right: 0;
         }
 
-        @media (max-width: $breakpoint-mobile) {
-            width: 50%;
-            margin-bottom: 10px;
+        .info {
+            &__title {
+                font-weight: bold;
+                color: $color-accent;
+                margin-bottom: 7px;
+                font-size: inherit;
+
+                &--regular {
+                    font-weight: normal;
+                }
+            }
+
+            &__text {
+                color: $color-text-dark;
+            }
         }
     }
 
@@ -55,9 +66,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media (max-width: $breakpoint-laptop) {
-            width: 100%;
-        }
     }
 
     &__nav {
@@ -79,21 +87,17 @@
     &__nav-divider {
         margin: 0 10px;
     }
-}
 
-.info {
-    &__title {
-        font-weight: bold;
-        color: $color-accent;
-        margin-bottom: 7px;
-        font-size: inherit;
-
-        &--regular {
-            font-weight: normal;
+    @media (max-width: $breakpoint-laptop) {
+        &__cta {
+            width: 100%;
         }
     }
-
-    &__text {
-        color: $color-text-dark;
+    @media (max-width: $breakpoint-mobile) {
+        &__info {
+            width: 50%;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
     }
 }
