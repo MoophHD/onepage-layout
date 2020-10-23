@@ -64,6 +64,7 @@ initSlider();
 
 // HANDLE SWIPE LEFT & SWIPE RIGHT
 
+const swipeThreshold = 5;
 const slider = document.querySelector(".slider");
 
 slider.addEventListener("touchstart", handleTouchStart, false);
@@ -87,10 +88,13 @@ function handleTouchMove(event) {
   }
   var xUp = event.touches[0].clientX;
   var xDiff = xDown - xUp;
-  if (xDiff > 0) {
-    changeItem(false);
-  } else {
-    changeItem(true);
+
+  if (Math.abs(xDiff) > swipeThreshold) {
+    if (xDiff >= 0) {
+      changeItem(true);
+    } else {
+      changeItem(false);
+    }
   }
 
   xDown = null;
