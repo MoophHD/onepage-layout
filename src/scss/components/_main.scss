@@ -1,12 +1,10 @@
 $border-radius: 10px;
 
 .main {
-    @include wrap-mobile-fluid;
-
     background-color: $color-accent-2;
 
     &__inner {
-        @include wrap;
+        @include wrap-mobile-fluid;
     }
 
     &__content {
@@ -38,6 +36,12 @@ $border-radius: 10px;
                 "post post"
                 "review-bar review-bar"
                 "link-bar link-bar";
+        }
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        &__content {
+            @include wrap;
         }
     }
 }
