@@ -1,12 +1,7 @@
 $border-radius: 10px;
 
 .main {
-    &-mobile-wrapper {
-        @media (max-width: $breakpoint-mobile) {
-            columns: 1;
-            padding: 0 25px;
-        }
-    }
+    @include wrap-mobile-fluid;
 
     background-color: $color-accent-2;
 
@@ -77,6 +72,12 @@ $border-radius: 10px;
 
         &__post {
             margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        &__post-container {
+            columns: 2;
         }
     }
     @media (max-width: $breakpoint-mobile) {

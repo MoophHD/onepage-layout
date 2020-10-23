@@ -1,7 +1,7 @@
 $slider-padding: 20px;
 
 .slider {
-    @include wrap;
+    @include wrap-mobile-fluid;
 
     background-color: white;
     padding: $slider-padding;

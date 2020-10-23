@@ -1,5 +1,5 @@
 .footer {
-    padding: 50px 25px 65px;
+    padding: 50px 0 65px;
 
     &__bg {
         position: absolute;
@@ -93,11 +93,15 @@
             width: 100%;
         }
     }
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: $breakpoint-tablet) {
         &__info {
             width: 50%;
             margin-right: 0;
             margin-bottom: 10px;
+
+            &:nth-child(2n) {
+                text-align: right;
+            }
         }
     }
 }

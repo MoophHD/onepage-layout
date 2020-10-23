@@ -10,12 +10,21 @@ $max-width: 1170px;
     }
 
     @media (max-width: $breakpoint-tablet) {
-        margin: auto;
+        margin: 0 30px;
         max-width: 100%;
     }
 
-    @media (max-width: $breakpoint-mobile) {
-        width: 100%;
+    // @media (max-width: $breakpoint-mobile) {
+    //     width: 100%;
+    // }
+}
+
+@mixin wrap-mobile-fluid {
+    @include wrap;
+
+    @media (max-width: $breakpoint-tablet) {
+        margin: auto;
+        max-width: 100%;
     }
 }
 
