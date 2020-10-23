@@ -1,6 +1,13 @@
 $border-radius: 10px;
 
 .main {
+
+    &-mobile-wrapper {
+        @media (max-width: $breakpoint-mobile) {
+            columns: 1;
+            padding: 0 25px;
+        }
+    }
     background-color: $color-accent-2;
 
     &__inner {
@@ -64,6 +71,7 @@ $border-radius: 10px;
         @media (max-width: $breakpoint-laptop) {
             margin-bottom: 20px;
         }
+
         @media (max-width: $breakpoint-mobile) {
             width: 100%;
         }
@@ -73,6 +81,8 @@ $border-radius: 10px;
 .post {
     &__inner {
         padding: 30px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
     }
 
     &__title {
@@ -85,7 +95,8 @@ $border-radius: 10px;
         width: 100%;
         margin-bottom: 15px;
         @media (max-width: $breakpoint-mobile) {
-            vertical-align: inherit;
+            max-width: 75%;
+            align-self: center;
         }
     }
 

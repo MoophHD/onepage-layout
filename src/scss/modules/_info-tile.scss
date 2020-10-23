@@ -65,25 +65,18 @@
         }
 
         &__icon {
-            font-size: calculateRem(25px);
+            font-size: calculateRem(30px);
         }
+        border-bottom: 2px solid $color-accent-2;
     }
 
     @media (max-width: $breakpoint-mobile) {
-        padding: 5px 0;
-        &__icon {
-            font-size: calculateRem(20px);
-            margin-bottom: 0px;
-        }
-
         &__title {
-            font-size: calculateRem(16px);
             margin-bottom: 0px;
         }
 
         &__text {
-            display: none;
+            text-decoration: none;
         }
-        border-bottom: 2px solid $color-accent-2;
     }
 }
