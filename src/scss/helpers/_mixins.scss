@@ -13,10 +13,6 @@ $max-width: 1170px;
         margin: 0 30px;
         max-width: 100%;
     }
-
-    // @media (max-width: $breakpoint-mobile) {
-    //     width: 100%;
-    // }
 }
 
 @mixin wrap-mobile-fluid {

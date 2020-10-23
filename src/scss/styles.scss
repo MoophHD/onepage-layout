@@ -10,7 +10,7 @@
 @import "helpers/mixins";
 @import "helpers/functions";
 
-// MODULES
+// MODULES (DEPENDED BLOCKS)
 
 @import "modules/nav";
 @import "modules/slider";
@@ -19,7 +19,7 @@
 @import "modules/searchbar";
 @import "modules/linkbar";
 
-// COMPONENTS
+// COMPONENTS (INDEPENDENT BLOCKS)
 
 @import "components/header";
 @import "components/main";

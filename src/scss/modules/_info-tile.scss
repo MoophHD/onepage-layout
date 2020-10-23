@@ -57,7 +57,7 @@
     flex: 1;
 
     @media (max-width: $breakpoint-tablet) {
-        padding: 10px 0;
+        padding: 15px 0;
         flex-basis: 50%;
 
         &:nth-child(2n)::after {
