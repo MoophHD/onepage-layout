@@ -2,9 +2,9 @@
 .reviewbar {
     grid-area:review-bar;
 
-    @media (max-width: $breakpoint-mobile) {
-        display: flex;
-    }
+    // @media (max-width: $breakpoint-mobile) {
+    //     display: flex;
+    // }
 
     @include main-block();
 
@@ -13,6 +13,11 @@
 
     &__title {
         @include main-title();
+        display: block;
+    }
+
+    &__review-container {
+        display: block;
     }
 
     &__review {
