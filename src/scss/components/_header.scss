@@ -24,18 +24,6 @@
         align-items: center;
     }
 
-    @media (max-width: $breakpoint-tablet) {
-        &__inner {
-            flex-direction: column;
-        }
-    }
-
-    &__logo {
-        @media (max-width: $breakpoint-tablet) {
-            margin-bottom: 20px;
-        }
-    }
-
     &__link {
         background-color: $color-accent;
         text-transform: uppercase;
@@ -44,8 +32,22 @@
         padding: 20px;
         border-radius: 5px;
         text-decoration: none;
-        @media (max-width: $breakpoint-tablet) {
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        &__logo {
+            margin-bottom: 20px;
+        }
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__link {
             padding: 10px 15px;
         }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        padding-top: 20px;
     }
 }
