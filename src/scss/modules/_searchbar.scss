@@ -15,7 +15,7 @@
 
     &__input {
         font-family: "Oxygen";
-        font-size: 13px;
+        font-size: calculateRem(13px);
         padding: 8px;
         padding-right: 25px;
         border: none;

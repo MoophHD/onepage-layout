@@ -44,7 +44,7 @@
 
     &__btn {
         margin: auto;
-        font-size: 1.5rem;
+        font-size: calculateRem(24px);
         cursor: pointer;
         color: #b297c4;
         background-color: white;

@@ -34,7 +34,7 @@
         }
 
         &__title {
-            font-size: 13px;
+            font-size: calculateRem(13px);
             text-transform: uppercase;
             color: #b297c4;
             margin-bottom: 5px;
@@ -42,7 +42,7 @@
 
         &__link {
             font-family: "Oxygen";
-            font-size: 13px;
+            font-size: calculateRem(13px);
             color: #979797;
         }
 
@@ -59,7 +59,7 @@
             float: left;
 
             i {
-                font-size: 25px;
+                font-size: calculateRem(25px);
                 color: white;
             }
         }

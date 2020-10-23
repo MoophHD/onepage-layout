@@ -15,7 +15,7 @@
 
         &__item {
             font-family: "Oxygen";
-            font-size: 13px;
+            font-size: calculateRem(13px);
             color: #747474;
             padding: 12px 0;
 

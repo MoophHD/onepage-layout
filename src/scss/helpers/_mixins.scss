@@ -27,7 +27,7 @@ $max-width: 1170px;
 
 @mixin main-title {
     color: #747474;
-    font-size: 17px;
+    font-size: calculateRem(17px);
     text-transform: uppercase;
     margin-bottom: 15px;
 }

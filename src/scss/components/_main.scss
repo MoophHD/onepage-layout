@@ -90,7 +90,7 @@ $border-radius: 10px;
     }
 
     &__title {
-        font-size: 17px;
+        font-size: calculateRem(17px);
         text-transform: uppercase;
         margin-bottom: 15px;
     }
@@ -106,7 +106,7 @@ $border-radius: 10px;
 
     &__text {
         font-family: "Oxygen", sans-serif;
-        font-size: 13px;
+        font-size: calculateRem(13px);
         margin: 0;
         margin-bottom: 25px;
         color: #747474;
