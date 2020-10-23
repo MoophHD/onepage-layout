@@ -75,6 +75,10 @@ $border-radius: 10px;
         @media (max-width: $breakpoint-mobile) {
             width: 100%;
         }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 

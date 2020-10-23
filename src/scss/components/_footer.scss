@@ -1,5 +1,5 @@
 .footer {
-    padding: 50px 10px 65px;
+    padding: 50px 25px 65px;
 
     &__bg {
         position: absolute;
@@ -27,9 +27,6 @@
         padding-bottom: 30px;
         border-bottom: 2px solid rgba(256, 256, 256, 0.15);
         margin-bottom: 40px;
-
-        // align-items:center;
-
         flex-wrap: wrap;
     }
 
@@ -42,7 +39,7 @@
         }
 
         @media (max-width: $breakpoint-mobile) {
-            // margin-right: 0;
+            width: 50%;
             margin-bottom: 10px;
         }
     }
