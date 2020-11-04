@@ -1,0 +1,38 @@
+$max-width: 1170px;
+
+@mixin wrap {
+    max-width: $max-width;
+    margin: auto;
+
+    @media (max-width: #{$max-width + 100px}) {
+        margin: 0 50px;
+        max-width: 100%;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        margin: 0 30px;
+        max-width: 100%;
+    }
+}
+
+@mixin wrap-mobile-fluid {
+    @include wrap;
+
+    @media (max-width: $breakpoint-tablet) {
+        margin: auto;
+        max-width: 100%;
+    }
+}
+
+@mixin main-block {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15);
+}
+
+@mixin main-title {
+    color: #747474;
+    font-size: calculateRem(17px);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}

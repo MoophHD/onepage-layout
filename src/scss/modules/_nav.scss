@@ -1,0 +1,106 @@
+.nav {
+    display: flex;
+    align-items: stretch;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        border-right: 2px solid #2a2a2a;
+        padding: 24px;
+
+        &:first-child {
+            border-left: 2px solid #2a2a2a;
+        }
+
+        &:hover {
+            background-color: #2a2a2a;
+            color: #b297c4;
+        }
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        display: none;
+    }
+}
+
+.nav--dropdown {
+    padding: 0 25px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    overflow: hidden;
+
+    &__btn-container {
+        z-index: 1;
+        background-color: #383838;
+        padding-bottom: 15px;
+    }
+
+    &__btn {
+        margin: auto;
+        font-size: calculateRem(24px);
+        cursor: pointer;
+        color: #b297c4;
+        background-color: white;
+        border-radius: 50%;
+        height: 2em;
+        width: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item-container {
+        @include main-block();
+
+        color: $color-text-dark;
+        display: flex;
+        visibility: hidden;
+
+        flex-direction: column;
+        align-items: stretch;
+        transform: translateY(-100%);
+        transition: visibility 0s, transform 0.3s ease;
+
+        position: absolute;
+        &--open {
+            visibility: visible;
+            position: relative;
+            transform: translateY(0);
+        }
+    }
+
+    &__item {
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 15px 0;
+
+        border-bottom: 1px solid $color-accent;
+
+        &:hover {
+            background-color: $color-accent;
+        }
+
+        &:first-child {
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+        }
+
+        &:last-child {
+            border-bottom: none;
+            border-bottom-left-radius: inherit;
+            border-bottom-right-radius: inherit;
+        }
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        display: flex;
+    }
+}

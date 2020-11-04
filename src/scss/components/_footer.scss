@@ -1,0 +1,107 @@
+.footer {
+    padding: 50px 0 65px;
+
+    &__bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+    }
+
+    &__inner {
+        @include wrap;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-family: "Open Sans";
+        font-size: calculateRem(13px);
+        padding-bottom: 30px;
+        border-bottom: 2px solid rgba(256, 256, 256, 0.15);
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .info {
+            &__title {
+                font-weight: bold;
+                color: $color-accent;
+                margin-bottom: 7px;
+                font-size: inherit;
+
+                &--regular {
+                    font-weight: normal;
+                }
+            }
+
+            &__text {
+                color: $color-text-dark;
+            }
+        }
+    }
+
+    &__social-link {
+        color: $color-accent;
+        font-size: calculateRem(23px);
+        margin-right: 10px;
+    }
+
+    &__cta {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        color: $color-accent;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: calculateRem(13px);
+    }
+
+    &__nav-link {
+        text-align: center;
+        flex: 1;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__nav-divider {
+        margin: 0 10px;
+    }
+
+    @media (max-width: $breakpoint-laptop) {
+        &__cta {
+            width: 100%;
+        }
+    }
+    @media (max-width: $breakpoint-tablet) {
+        &__info {
+            width: 50%;
+            margin-right: 0;
+            margin-bottom: 10px;
+
+            &:nth-child(2n) {
+                text-align: right;
+            }
+        }
+    }
+}

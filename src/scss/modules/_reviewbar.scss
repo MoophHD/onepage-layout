@@ -1,0 +1,63 @@
+
+.reviewbar {
+    grid-area:review-bar;
+
+    @include main-block();
+
+    padding: 24px 20px 30px;
+
+
+    &__title {
+        @include main-title();
+        display: block;
+    }
+
+    &__review-container {
+        display: block;
+    }
+
+    &__review {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ 
+        padding: 18px 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            border: none;
+            padding-bottom: 0;
+        }
+
+        &__title {
+            font-size: calculateRem(13px);
+            text-transform: uppercase;
+            color: #b297c4;
+            margin-bottom: 5px;
+        }
+
+        &__link {
+            font-family: "Oxygen";
+            font-size: calculateRem(13px);
+            color: #979797;
+        }
+
+        &__icon {
+            background-color: #b297c4;
+            height: 60px;
+            width: 60px;
+            border-radius: 5px;
+            margin-right: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            float: left;
+
+            i {
+                font-size: calculateRem(25px);
+                color: white;
+            }
+        }
+    }
+}

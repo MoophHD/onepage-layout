@@ -1,0 +1,39 @@
+
+.linkbar {
+    grid-area:link-bar;
+    @include main-block();
+    padding: 25px 20px 30px;
+
+    &__title {
+        @include main-title();
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        &__item {
+            font-family: "Oxygen";
+            font-size: calculateRem(13px);
+            color: #747474;
+            padding: 12px 0;
+
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: #747474;
+            }
+
+            i {
+                margin-right: 10px;
+                color: #b297c4;
+            }
+        }
+    }
+}

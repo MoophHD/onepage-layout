@@ -1,0 +1,53 @@
+.header {
+    padding-top: 70px;
+    position: relative;
+    width: 100%;
+
+    &__bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        overflow: hidden;
+    }
+
+    &__nav {
+        background-color: #383838;
+        margin-bottom: 60px;
+    }
+
+    &__inner {
+        @include wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        background-color: $color-accent;
+        text-transform: uppercase;
+        font-size: calculateRem(44px);
+        color: $color-text-white;
+        padding: 20px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        &__logo {
+            margin-bottom: 20px;
+        }
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__link {
+            padding: 10px 15px;
+        }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        padding-top: 20px;
+    }
+}
